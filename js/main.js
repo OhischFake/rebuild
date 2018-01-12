@@ -1,7 +1,11 @@
 $(function(){
 
+    $('body').wrap('<div></div>');
 
-		    //Zweite Bedingung das "resize" nicht dauerhaft abgefeuert wird
+
+
+
+    //Zweite Bedingung das "resize" nicht dauerhaft abgefeuert wird
     var $w_state_small = null;
     var $w_state_big = null;
     var $w_state_mobile = null;
@@ -58,6 +62,4 @@ $(function(){
   	//Mobile Navigation und Radar
   	$(window).resize(resize);
     resize();
-
-
 });
