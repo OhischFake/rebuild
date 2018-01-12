@@ -1,7 +1,7 @@
 (function($){
 	$(function(){
 		$('.slider').slider({
-			sliderToggler: true,
+			sliderToggler: false,
 			autoSlide: {
 				state: true,
 				secs: 4500,

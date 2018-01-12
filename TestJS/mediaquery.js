@@ -36,18 +36,14 @@
 			selfObj.active();
 			if(selfObj.sliderToggler == true) {
 				selfObj.setupSlideToggler();
-				selfObj.prev();
 				selfObj.next();
-			}else {
-				return false;
-			};
+			}
 
 			if(selfObj.autoSlide.state) {
 				selfObj.setupAutoSlide();
 			}
 
-			$('.prev').click(selfObj.prev);
-			$('.next').click(selfObj.next);
+
 		};
 
 		this.wrap = function(image) {
@@ -65,6 +61,8 @@
 			if (selfObj.sliderToggler == true) {
 				$('<div class="next"></div>').prependTo('.slider');
 				$('<div class="prev"></div>').appendTo('.slider');
+				$('.prev').click(selfObj.prev);
+				$('.next').click(selfObj.next);
 			}else {
 				return selfObj.sliderToggler;
 			}
